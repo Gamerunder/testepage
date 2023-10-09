@@ -11,7 +11,7 @@ function App() {
 
   function listAllPokemons() {
     let arrayPokemons = [], herePromises = []
-    axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=1281')
+    axios.get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=99')
       .then(response=> {
 
         response.data.results.forEach(pokemon=> {
